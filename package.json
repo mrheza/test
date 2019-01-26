@@ -1,0 +1,23 @@
+{
+  "name": "sayurbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rheza",
+  "license": "ISC",
+  "dependencies": {
+    "better-js-class": "^0.1.3",
+    "body-parser": "^1.18.3",
+    "cps": "^1.0.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "node-mysql": "^0.4.2",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "underscore": "^1.9.1"
+  }
+}
