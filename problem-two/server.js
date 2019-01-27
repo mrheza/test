@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const cps = require('cps');
 const server = app.listen(3000, function () {
-	console.log('Example app listening on port 3000!');
+	console.log('Test app listening on port 3000!');
 });
 const io = require('socket.io').listen(server);
 
