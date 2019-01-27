@@ -66,7 +66,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
 <body>
-<a href="offer.html"><img src="images/download.png" class="img-head" alt=""></a>
+<a href="/"><img src="images/download.png" class="img-head" alt=""></a>
 <div class="header">
 
     <div class="container">
@@ -137,10 +137,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
                   <div class="clearfix"></div>
                 </div>
                   <div class="add add-2">
-                    
-                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="<%= item.id %>" data-name="<%= item.item %>" data-summary="<%= item.item %>" data-price="<%= item.price %>" data-quantity="1" data-image="<%= item.images %>">Add to Cart</button>
-                   
-                </div>
+                    <% if(item.stock <= 0) { %>
+                     <button class="btn btn-danger my-cart-btn my-cart-b " disabled>Add to Cart</button>
+                    <% }else{ %>
+                     <button class="btn btn-danger my-cart-btn my-cart-b " data-id="<%= item.id %>" data-name="<%= item.item %>" data-summary="<%= item.item %>" data-price="<%= item.price %>" data-quantity="1" data-image="<%= item.images %>">Add to Cart</button>
+                    <% } %>
+                  </div>
               </div>
             </div>
           </div>
